@@ -3,8 +3,6 @@
 ## Purpose of this Project
 The primary goal of this project is to learn and implement embedded TCP/IP communication. The focus is on gaining hands-on experience with networking concepts at the embedded system level. Additionally, Wireshark is used to analyze the network traffic, providing insights into the communication between the embedded device and other networked systems.
 
-Implemented a simple HTTP server on the Nucleo-F756ZG development board using Cube IDE and the Mongoose Library. 
-
 This project involved:
 - Leveraging TCP/IP libraries to handle network communication and HTTP requests on an embedded system.
 - Wiretapping HTTP traffic to explore and understand how data is processed through various layers of the network stack, from the driver layer to the application layer.
