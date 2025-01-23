@@ -225,6 +225,15 @@ This HTTP transaction involves multiple frames exchanged between the client and 
 3. **TCP Teardown**:
    - The last four frames are part of the **four-way TCP teardown**:
      - This is the process used to gracefully close the connection between the client and server.
+
+**One major point i learned from digging the code** 
+```lua
+#pragma once
+```
+C optimization is powerful for performance, but in TCP/IP networking, protocol correctness is often more important, especially when working with standardized protocols. Ensuring that your system follows the TCP/IP specification ensures reliable communication, while unnecessary optimization might sacrifice clarity or cause protocol issues.
+
+ In many networking cases, sticking to the protocol and ensuring the system works correctly is more critical. Optimizing comes after that — and only when you see areas where performance is truly a bottleneck.
+
 ---
 ### Summary
 The skills I've learned from setting up Mongoose TCP/IP on an embedded system are incredibly valuable, even as a beginner. 
